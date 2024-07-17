@@ -11,9 +11,6 @@ module.exports = {
         secondary: '#131c19',
         tertiary: '#2a2b2d',
       },
-      backgroundImage: {
-        'custom-gradient': 'linear-gradient(to right, var(--tw-gradient-stops))',
-      },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
       },

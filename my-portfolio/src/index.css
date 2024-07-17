@@ -6,11 +6,15 @@ body {
   @apply font-sans;
 }
 
-@layer utilities {
-  .bg-custom-gradient {
-    --tw-gradient-from: theme('colors.primary');
-    --tw-gradient-to: theme('colors.primary');
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-    background-image: linear-gradient(to right, var(--tw-gradient-stops));
-  }
+body {
+  background:
+    radial-gradient(circle, #1a1a1a 10%, transparent 10%),
+    radial-gradient(circle, #333333 10%, transparent 10%),
+    linear-gradient(135deg, #1a1a1a, #000000, #1a1a1a);
+  background-color: #000000; /* Very dark background color */
+  background-size: 30px 30px, 30px 30px, 100% 100%; /* Adjust sizes as needed */
+  color: #ffffff; /* Text color */
+  font-family: Arial, sans-serif; /* Example font */
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
 }

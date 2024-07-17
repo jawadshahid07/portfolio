@@ -22,7 +22,7 @@ const projects = [
 
 function Projects() {
   return (
-    <section id="projects" className="min-h-screen bg-gray-100">
+    <section id="projects" className="min-h-screen">
       <div className="container mx-auto py-16">
         <h2 className="text-4xl font-bold text-center mb-8">Projects</h2>
         <div className="space-y-16">

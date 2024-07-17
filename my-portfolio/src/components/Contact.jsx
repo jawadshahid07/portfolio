@@ -5,7 +5,7 @@ function Contact() {
     <section id="contact" className="min-h-screen">
       <div className="container mx-auto flex py-64 items-center justify-center">
         <div className="max-w-lg w-full bg-white rounded-lg shadow-xl p-8">
-          <h2 className="text-4xl font-bold mb-8 text-center">Contact Me</h2>
+          <h2 className="text-4xl font-bold mb-8 text-center text-primary">Contact Me</h2>
           <form className="space-y-4">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700">

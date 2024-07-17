@@ -3,10 +3,10 @@ import EducationCard from './EducationCard';
 
 function Education() {
   return (
-    <section id="education" className="min-h-screen pt-6 bg-gray-100">
+    <section id="education" className="min-h-screen pt-6 flex justify-center items-center">
       <div className="container mx-auto">
         <div className="text-center mb-8">
-          <h2 className="text-4xl font-bold text-gray-800">Education</h2>
+          <h2 className="text-4xl font-bold text-white">Education</h2>
         </div>
         <div className="ml-auto"> {/* Use ml-auto to align content to the left */}
           <EducationCard
