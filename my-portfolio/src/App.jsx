@@ -1,6 +1,5 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import About from "./components/About";
 import Technologies from "./components/Technologies";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
@@ -15,10 +14,10 @@ export default function App() {
       <div className="container mx-auto px-8">
         <Header />
         <Hero/>
-        <About/>
-        <Technologies/>
         <Experience/>
         <Projects/>
+        <Technologies/>
+
         <Contact/>
       </div>
     </div>

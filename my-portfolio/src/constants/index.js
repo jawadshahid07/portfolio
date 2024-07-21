@@ -1,76 +1,134 @@
 import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import cloudresumeproject from "../assets/projects/cloudresumeproject.png";
+import invoiceproject from "../assets/projects/invoiceproject.png";
+import posproject from "../assets/projects/possystemproject.png";
+import seleniumproject from "../assets/projects/seleniumproject.png";
+import bakeryproject from "../assets/projects/bakeryproject.png";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+import fastlogo from "../assets/fastlogo.png";
+import fraglogo from "../assets/fraglogo.jpg";
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+import { SiTensorflow, SiPytorch, SiOpencv, SiNumpy, SiPandas, SiScikitlearn} from "react-icons/si";
+import {SiAmazonaws, SiPython, SiJavascript, SiGit, SiSelenium, SiTerraform} from "react-icons/si";
+import { SiMysql, SiSpring, SiJenkins, SiApachemaven} from "react-icons/si";
+
+import {FaJava} from "react-icons/fa";
+
+import {SiRedux, SiFirebase, SiFramer, SiHtml5, SiCss3, SiReact, SiExpress, SiMongodb, SiNodedotjs, SiTailwindcss} from "react-icons/si";
+
+
+export const HERO_CONTENT = `I am a passionate software engineer with a bachelors degree from FAST NUCES. My expertise lies in machine learning, natural language processing (NLP), and computer vision. I specialize in using technologies like TensorFlow, PyTorch, and OpenCV to develop intelligent solutions. Additionally, I have a strong background in cloud computing with AWS services such as S3, Lambda, and EC2, and I utilize Terraform for infrastructure as code. My goal is to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+
+export const TECHNOLOGIES = [
+  { icon: SiTensorflow, color: "text-yellow-400", duration: 2.5 },
+  { icon: SiPytorch, color: "text-red-600", duration: 2 },
+  { icon: SiOpencv, color: "text-green-600", duration: 1.5 },
+  { icon: SiNumpy, color: "text-blue-500", duration: 3 },
+  { icon: SiPandas, color: "text-blue-400", duration: 3.5 },
+  { icon: SiScikitlearn, color: "text-orange-500", duration: 3 },
+ 
+  { icon: SiAmazonaws, color: "text-orange-400", duration: 3.5 },
+  { icon: SiTerraform, color: "text-blue-600", duration: 2.5 },
+  { icon: SiPython, color: "text-blue-500", duration: 2 },
+  { icon: SiJavascript, color: "text-yellow-300", duration: 1.5 },
+  { icon: SiGit, color: "text-orange-700", duration: 2 },
+
+  { icon: SiSelenium, color: "text-blue-600", duration: 2.5 },
+  { icon: FaJava, color: "text-red-500", duration: 3 },
+  { icon: SiMysql, color: "text-blue-600", duration: 4 },
+  { icon: SiSpring, color: "text-green-600", duration: 2 },
+  { icon: SiJenkins, color: "text-red-600", duration: 3 },
+  { icon: SiApachemaven, color: "text-orange-500", duration: 2.5 },
+  { icon: SiTailwindcss, color: "text-teal-500", duration: 3.5 },
+
+  { icon: SiRedux, color: "text-purple-600", duration: 3.5 },
+  { icon: SiFirebase, color: "text-yellow-600", duration: 2.5 },
+  { icon: SiFramer, color: "text-black", duration: 2 },
+  { icon: SiHtml5, color: "text-orange-500", duration: 2.5 },
+  { icon: SiCss3, color: "text-blue-500", duration: 3 },
+  { icon: SiReact, color: "text-cyan-400", duration: 3.5 },
+  { icon: SiExpress, color: "text-gray-500", duration: 2 },
+  { icon: SiMongodb, color: "text-green-500", duration: 1.5 },
+  { icon: SiNodedotjs, color: "text-green-500", duration: 3 },
+];
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    year: "March 2024 - Present",
+    role: "Research Assistant",
+    image: fastlogo,
+    company: "FAST NUCES",
+    description: `Conducted AI-based research to produce an efficient solution for rice disease detection. Utilized libraries such as OpenCV, TensorFlow, and PyTorch to perform image segmentation, preprocessing, and model training. Implemented automated rice disease detection using a drone-based approach.`,
+    technologies: ["TensorFlow", "PyTorch", "OpenCV", "NumPy", "Pandas", "scikit-learn"],
   },
   {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
-  },
-  {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  },
-  {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+    year: "July 2024 - Present",
+    role: "Intern Unity Developer",
+    image: fraglogo,
+    company: "FRAG Games",
+    description: `Collaborated with the development team to create and optimize game features using Unity. Assisted in debugging and testing to ensure high-quality gameplay. Contributed to the design and implementation of interactive game mechanics.`,
+    technologies: ["Unity", "C#", "Visual Studio", "Git"],
   },
 ];
+
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
-    image: project1,
-    description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+    title: "Cloud Resume Challenge",
+    image: cloudresumeproject,
+    link: "https://jawadify.xyz",
+    description: 
+      "Developed a serverless resume website using AWS services. Implemented SAM for Infrastructure as Code (IaC) and conducted various tests to ensure reliability.",
+    technologies: ["AWS", "S3", "Lambda", "DynamoDB", "CloudFront", "Python", "JavaScript", "Git", "Puppeteer"],
   },
   {
-    title: "Task Management App",
-    image: project2,
-    description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+    title: "Smart Invoice Extraction System",
+    image: invoiceproject,
+    link: "https://github.com/jawadshahid07/Invoice-Data-Extraction-System",
+    description: 
+      "Trained a YOLOv8 model to detect key fields on annotated invoice images and used Tesseract OCR to convert detected labels into text. Automated text transfer into Excel sheets.",
+    technologies: ["Python", "PyTorch", "YOLOv8", "Tesseract", "OpenCV"],
+  },
+  {
+    title: "Selenium Automation Project for OrangeHRM",
+    image: seleniumproject,
+    link: "https://github.com/jawadshahid07/OrangeHRM-Automation",
+    description: 
+      "Developed a Selenium-based automation framework for end-to-end UI testing on the OrangeHRM website. Utilized TestNG for test management and Extent Reports for detailed reporting. Automated CI/CD using Jenkins and Maven.",
+    technologies: ["Java", "Selenium WebDriver", "TestNG", "Extent Reports", "Maven", "Jenkins"],
+  },
+  {
+    title: "Bakery Web App",
+    image: bakeryproject,
+    link: "https://github.com/jawadshahid07/A-Fresh-Tart",
+    description: 
+      "Developed a user-friendly MERN stack application for a bakery, including user authentication, order placing, and payments. Utilized Tailwind CSS for design and React Redux for state management.",
+    technologies: ["MongoDB", "Express", "React", "Node", "Redux", "Firebase", "Tailwind"],
   },
   {
     title: "Portfolio Website",
-    image: project3,
-    description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+    image: project1,
+    link: "https://github.com/jawadshahid07/portfolio-website",
+    description: 
+      "Developed a personal portfolio website showcasing projects, skills, and contact information. Utilized React, Tailwind CSS, and Framer Motion for animations.",
+    technologies: ["React", "Tailwind CSS", "Framer Motion"],
   },
   {
-    title: "Blogging Platform",
-    image: project4,
-    description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+    title: "Pharmacy POS System",
+    image: posproject,
+    link: "https://github.com/jawadshahid07/POS-system",
+    description: 
+      "Built a Java POS system using Swing and JDBC with SQL. Applied design patterns and OOP principles for scalability, developing interfaces for Sales Assistant and Staff Manager.",
+    technologies: ["Java", "Swing", "JDBC", "SQL"],
   },
 ];
 
+
+export const CERTIFICATIONS = {
+  
+}
+
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  phoneNo: "+92 320 8433967 ",
+  email: "jawad.shahid70@outlook.com",
 };
