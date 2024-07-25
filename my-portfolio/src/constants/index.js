@@ -5,6 +5,9 @@ import posproject from "../assets/projects/possystemproject.png";
 import seleniumproject from "../assets/projects/seleniumproject.png";
 import bakeryproject from "../assets/projects/bakeryproject.png";
 
+import deeplearningailogo from "../assets/certifications/deeplearningai.png";
+import udemylogo from "../assets/certifications/udemy.jpg";
+
 import fastlogo from "../assets/fastlogo.png";
 import fraglogo from "../assets/fraglogo.jpg";
 
@@ -124,9 +127,29 @@ export const PROJECTS = [
 ];
 
 
-export const CERTIFICATIONS = {
-  
-}
+export const CERTIFICATIONS = [
+  {
+    title: "Selenium Automation Framework in Java",
+    company: "Udemy",
+    image: udemylogo, 
+    link: "https://www.udemy.com/certificate/UC-2c22dc20-50b5-4496-9cdb-bb63fbe52bde/",
+    credential: "Credential ID: UC-2c22dc20-50b5-4496-9cdb-bb63fbe52bde", 
+    description: 
+      "Completed a comprehensive course by Rahul Shetty on building Selenium automation frameworks in Java. Gained hands-on experience with TestNG, Extent Reports, and Jenkins integration.",
+    technologies: ["Java", "Selenium WebDriver", "TestNG", "Extent Reports", "Jenkins"],
+  },
+  {
+    title: "Machine Learning Specialization",
+    company: "DeepLearning.AI",
+    image: deeplearningailogo, 
+    link: "https://www.coursera.org/account/accomplishments/specialization/UVDNVQFZ6V7E",
+    credential: "Credential ID: UVDNVQFZ6V7E",
+    description: 
+      "Completed a 3-course specialization by Andrew Ng from Stanford University on Coursera. Covered supervised learning, advanced learning algorithms, and unsupervised learning.",
+    technologies: ["Python", "Scikit-Learn", "TensorFlow", "Machine Learning"],
+  },
+];
+
 
 export const CONTACT = {
   phoneNo: "+92 320 8433967 ",
