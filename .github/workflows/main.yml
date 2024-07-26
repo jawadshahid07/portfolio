@@ -3,7 +3,6 @@ on: push
 
 
 jobs:
-
   build-and-deploy-infra:
     needs: test-infra
     runs-on: ubuntu-latest
@@ -19,9 +18,8 @@ jobs:
       - run: terraform plan -out=tfplan
       - run: terraform apply -auto-approve tfplan
 
-
-  build-and-deploy:
-      needs: build-and-deploy-infra
+  build-and-deploy-website:
+    needs: build-and-deploy-infra
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
