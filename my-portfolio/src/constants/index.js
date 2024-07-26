@@ -1,4 +1,4 @@
-import project1 from "../assets/projects/project-1.jpg";
+import portfolio from "../assets/projects/portfolio.png";
 import cloudresumeproject from "../assets/projects/cloudresumeproject.png";
 import invoiceproject from "../assets/projects/invoiceproject.png";
 import posproject from "../assets/projects/possystemproject.png";
@@ -17,10 +17,11 @@ import { SiMysql, SiSpring, SiJenkins, SiApachemaven} from "react-icons/si";
 
 import {FaJava} from "react-icons/fa";
 
-import {SiRedux, SiFirebase, SiFramer, SiHtml5, SiCss3, SiReact, SiExpress, SiMongodb, SiNodedotjs, SiTailwindcss} from "react-icons/si";
+import {SiRedux, SiFirebase, SiFramer, SiHtml5, SiCss3, SiReact, SiExpress, SiMongodb, SiTailwindcss} from "react-icons/si";
+import {FaNodeJs} from "react-icons/fa";
 
 
-export const HERO_CONTENT = `I am a passionate software engineer with a bachelors degree from FAST NUCES. My expertise lies in machine learning, natural language processing (NLP), and computer vision. I specialize in using technologies like TensorFlow, PyTorch, and OpenCV to develop intelligent solutions. Additionally, I have a strong background in cloud computing with AWS services such as S3, Lambda, and EC2, and I utilize Terraform for infrastructure as code. My goal is to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I am a passionate software engineer with a bachelors degree from FAST NUCES. My expertise lies in machine learning, natural language processing (NLP), and computer vision. I specialize in using technologies like TensorFlow, PyTorch, and OpenCV to develop intelligent solutions. Additionally, I have a strong background in cloud computing with AWS services such as S3, Lambda, and EC2, and I use Terraform for infrastructure as code. My goal is to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
 export const TECHNOLOGIES = [
   { icon: SiTensorflow, color: "text-yellow-400", duration: 2.5 },
@@ -46,13 +47,13 @@ export const TECHNOLOGIES = [
 
   { icon: SiRedux, color: "text-purple-600", duration: 3.5 },
   { icon: SiFirebase, color: "text-yellow-600", duration: 2.5 },
-  { icon: SiFramer, color: "text-black", duration: 2 },
+  { icon: SiFramer, color: "text-blue-300", duration: 2 },
   { icon: SiHtml5, color: "text-orange-500", duration: 2.5 },
   { icon: SiCss3, color: "text-blue-500", duration: 3 },
   { icon: SiReact, color: "text-cyan-400", duration: 3.5 },
   { icon: SiExpress, color: "text-gray-500", duration: 2 },
   { icon: SiMongodb, color: "text-green-500", duration: 1.5 },
-  { icon: SiNodedotjs, color: "text-green-500", duration: 3 },
+  { icon: FaNodeJs, color:"", duration: 3 },
 ];
 
 export const EXPERIENCES = [
@@ -110,7 +111,7 @@ export const PROJECTS = [
   },
   {
     title: "Portfolio Website",
-    image: project1,
+    image: portfolio,
     link: "https://github.com/jawadshahid07/portfolio-website",
     description: 
       "Developed a personal portfolio website showcasing projects, skills, and contact information. Utilized React, Tailwind CSS, and Framer Motion for animations.",
