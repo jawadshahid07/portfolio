@@ -44,7 +44,7 @@ export const TECHNOLOGIES = [
 
   { icon: SiRedux, color: "text-purple-600", duration: 3.5 },
   { icon: SiFirebase, color: "text-yellow-600", duration: 2.5 },
-  { icon: SiFramer, color: "text-black", duration: 2 },
+  { icon: SiFramer, color: "text-blue-300", duration: 2 },
   { icon: SiHtml5, color: "text-orange-500", duration: 2.5 },
   { icon: SiCss3, color: "text-blue-500", duration: 3 },
   { icon: SiReact, color: "text-cyan-400", duration: 3.5 },
