@@ -4,9 +4,15 @@ import invoiceproject from "../assets/projects/invoiceproject.png";
 import posproject from "../assets/projects/possystemproject.png";
 import seleniumproject from "../assets/projects/seleniumproject.png";
 import bakeryproject from "../assets/projects/bakeryproject.png";
+import datasynth from "../assets/projects/datasynth.png";
+
+import udemy from "../assets/certifications/udemy.jpg";
+import deeplearningai from "../assets/certifications/deeplearningai.png";
+import coursera from "../assets/certifications/coursera.png";
 
 import fastlogo from "../assets/fastlogo.png";
 import fraglogo from "../assets/fraglogo.jpg";
+import xavorlogo from "../assets/xavorlogo.jpg";
 
 import { SiTensorflow, SiPytorch, SiOpencv, SiNumpy, SiPandas, SiScikitlearn} from "react-icons/si";
 import {SiAmazonaws, SiPython, SiJavascript, SiGit, SiSelenium, SiTerraform} from "react-icons/si";
@@ -18,7 +24,7 @@ import {SiRedux, SiFirebase, SiFramer, SiHtml5, SiCss3, SiReact, SiExpress, SiMo
 import {FaNodeJs} from "react-icons/fa";
 
 
-export const HERO_CONTENT = `I am a passionate software engineer with a bachelors degree from FAST NUCES. My expertise lies in machine learning, natural language processing (NLP), and computer vision. I specialize in using technologies like TensorFlow, PyTorch, and OpenCV to develop intelligent solutions. Additionally, I have a strong background in cloud computing with AWS services such as S3, Lambda, and EC2, and I use Terraform for infrastructure as code. My goal is to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I am a passionate software engineer with a bachelors degree from FAST NUCES. My expertise lies in machine learning, computer vision, and natural language processing (NLP). I specialize in using technologies like TensorFlow, PyTorch, and OpenCV to develop intelligent solutions. Additionally, I have a strong background in cloud computing with AWS services such as S3, Lambda, and EC2, and I use Terraform for infrastructure as code. My goal is to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
 export const TECHNOLOGIES = [
   { icon: SiTensorflow, color: "text-yellow-400", duration: 2.5 },
@@ -37,7 +43,6 @@ export const TECHNOLOGIES = [
   { icon: SiSelenium, color: "text-blue-600", duration: 2.5 },
   { icon: FaJava, color: "text-red-500", duration: 3 },
   { icon: SiMysql, color: "text-blue-600", duration: 4 },
-  { icon: SiSpring, color: "text-green-600", duration: 2 },
   { icon: SiJenkins, color: "text-red-600", duration: 3 },
   { icon: SiApachemaven, color: "text-orange-500", duration: 2.5 },
   { icon: SiTailwindcss, color: "text-teal-500", duration: 3.5 },
@@ -55,22 +60,34 @@ export const TECHNOLOGIES = [
 
 export const EXPERIENCES = [
   {
+    year: "December 2024 - Present",
+    role: "AI Intern",
+    image: xavorlogo,
+    company: "Xavor Corporation",
+    description: "Engineered production-ready AI pipelines for computer vision and natural language processing tasks on NVIDIA Jetson devices (Xavier and Orin) by researching model suitability, optimizing implementations, and ensuring compatibility with healthcare robots. Implemented a computer vision pipeline using MoveNet for skeletal detection and CNN for pose classification, using image processing techniques to enable accurate pose analysis for healthcare assistance. Developed a multimodal emotion classification pipeline for audio and text data by implementing advanced processing techniques (audio cleaning, noise reduction, and transcription) and utilizing specialized models.",
+    technologies: ["Python", "PyTorch", "Azure", "OpenCV", "ROS", "NVIDIA Jetson", "ByteTracker"],
+    companyLink: "https://www.xavor.com",
+  },
+  {
     year: "March 2024 - Present",
     role: "Research Assistant",
     image: fastlogo,
     company: "FAST NUCES",
-    description: `Conducted AI-based research to produce an efficient solution for rice disease detection. Utilized libraries such as OpenCV, TensorFlow, and PyTorch to perform image segmentation, preprocessing, and model training. Implemented automated rice disease detection using a drone-based approach.`,
+    description: "Developed a custom segmentation pipeline which enhanced dataset quality and improved model accuracy by up to 20% across various transfer learning models for rice disease detection. Utilized Super Resolution techniques such as image up-scaling and GAN-based algorithms to enhance the resolution of satellite imagery to contribute to research involving satellite data.",
     technologies: ["TensorFlow", "PyTorch", "OpenCV", "NumPy", "Pandas", "scikit-learn"],
+    companyLink: "https://www.nu.edu.pk/",
   },
   {
-    year: "July 2024 - Present",
-    role: "Intern Unity Developer",
+    year: "July 2024 - August 2024",
+    role: "Intern Unity Engineer",
     image: fraglogo,
     company: "FRAG Games",
-    description: `Collaborated with the development team to create and optimize game features using Unity. Assisted in debugging and testing to ensure high-quality gameplay. Contributed to the design and implementation of interactive game mechanics.`,
+    description: "Delivered over 8 game features ahead of deadlines, by writing modular and efficient C# scripts within Unity.",
     technologies: ["Unity", "C#", "Visual Studio", "Git"],
+    companyLink: "https://www.frag-games.com",
   },
 ];
+
 
 
 export const PROJECTS = [
@@ -80,7 +97,7 @@ export const PROJECTS = [
     link: "https://jawadify.xyz",
     description: 
       "Developed a serverless resume website using AWS services. Implemented SAM for Infrastructure as Code (IaC) and conducted various tests to ensure reliability.",
-    technologies: ["AWS", "S3", "Lambda", "DynamoDB", "CloudFront", "Python", "JavaScript", "Git", "Puppeteer"],
+    technologies: ["AWS", "S3", "Lambda", "DynamoDB", "CloudFront", "Python", "JavaScript", "Git", "Terraform"],
   },
   {
     title: "Smart Invoice Extraction System",
@@ -88,7 +105,15 @@ export const PROJECTS = [
     link: "https://github.com/jawadshahid07/Invoice-Data-Extraction-System",
     description: 
       "Trained a YOLOv8 model to detect key fields on annotated invoice images and used Tesseract OCR to convert detected labels into text. Automated text transfer into Excel sheets.",
-    technologies: ["Python", "PyTorch", "YOLOv8", "Tesseract", "OpenCV"],
+    technologies: ["Python", "PyTorch", "YOLOv8", "Tesseract", "OpenCV", "Docker"],
+  },
+  {
+    title: "Multi-Agent Synthetic Dataset Generator",
+    image: datasynth, 
+    link: "https://datasynth.site",
+    description: 
+      "Developed a multi-agent synthetic dataset generator as part of the final-year project. The project focuses on generating synthetic data for training AI models. It uses an Agentic AI approach to automatically generate, execute, validate, regenerate, and organize code into synthetic datasets.",
+    technologies: ["Python", "React", "FastAPI", "Meta", "LangChain", "HuggingFace", "MySQL"],
   },
   {
     title: "Selenium Automation Project for OrangeHRM",
@@ -125,9 +150,26 @@ export const PROJECTS = [
 ];
 
 
-export const CERTIFICATIONS = {
-  
-}
+export const CERTIFICATIONS = [
+  {
+    title: "Machine Learning Specialization",
+    link: "https://coursera.org/share/c291a898a1a23c1563a74b5f164370c0",
+    provider: "Coursera",
+    image: coursera,
+  },
+  {
+    title: "LangChain for LLM Development",
+    link: "https://learn.deeplearning.ai/accomplishments/ef40ac07-5efa-4bf9-91e7-8304a67b8f55?usp=sharing",
+    provider: "DeepLearning.AI",
+    image: deeplearningai,
+  },
+  {
+    title: "Selenium WebDriver with Java",
+    link: "https://www.udemy.com/certificate/UC-2c22dc20-50b5-4496-9cdb-bb63fbe52bde/",
+    provider: "Udemy",
+    image: udemy,
+  },
+];
 
 export const CONTACT = {
   phoneNo: "+92 320 8433967 ",
