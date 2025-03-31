@@ -37,7 +37,7 @@ jobs:
         with:
           args: --delete
         env:
-          AWS_S3_BUCKET: jawad-portfolio-website-2024
+          AWS_S3_BUCKET: jawad-portfolio-bucket77
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           SOURCE_DIR: my-portfolio/dist
