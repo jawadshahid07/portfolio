@@ -13,6 +13,7 @@ import coursera from "../assets/certifications/coursera.png";
 import fastlogo from "../assets/fastlogo.png";
 import fraglogo from "../assets/fraglogo.jpg";
 import xavorlogo from "../assets/xavorlogo.jpg";
+import dubizzlelogo from "../assets/dubizzle.png";
 
 import { SiTensorflow, SiPytorch, SiOpencv, SiNumpy, SiPandas, SiScikitlearn} from "react-icons/si";
 import {SiAmazonaws, SiPython, SiJavascript, SiGit, SiSelenium, SiTerraform} from "react-icons/si";
@@ -60,8 +61,17 @@ export const TECHNOLOGIES = [
 
 export const EXPERIENCES = [
   {
-    year: "December 2024 - Present",
-    role: "AI Intern",
+    year: "March 2025 – Present",
+    role: "Associate Software Engineer",
+    image: dubizzlelogo,
+    company: "Dubizzle Labs",
+    description: "Designed and implemented a dynamic load balancer in Python for monitoring RabbitMQ queues, enabling efficient GPU instance scaling across Genesis, Runpod, and Salad. Built robust, maintainable software architecture using design patterns to automate resource allocation for AI workloads powering OLX, Zameen, and Bayut. Developed and managed production-ready machine learning pipelines by conducting exploratory data analysis, data preprocessing, and model training for various AI-driven services.",
+    technologies: ["Python", "RabbitMQ", "Runpod", "Salad", "Docker", "ML Pipelines", "EDA", "Genesis"],
+    companyLink: "https://www.dubizzlelabs.com"
+  },
+  {
+    year: "December 2024 - March 2025",
+    role: "Machine Learning Engineer",
     image: xavorlogo,
     company: "Xavor Corporation",
     description: "Engineered production-ready AI pipelines for computer vision and natural language processing tasks on NVIDIA Jetson devices (Xavier and Orin) by researching model suitability, optimizing implementations, and ensuring compatibility with healthcare robots. Implemented a computer vision pipeline using MoveNet for skeletal detection and CNN for pose classification, using image processing techniques to enable accurate pose analysis for healthcare assistance. Developed a multimodal emotion classification pipeline for audio and text data by implementing advanced processing techniques (audio cleaning, noise reduction, and transcription) and utilizing specialized models.",
@@ -69,7 +79,7 @@ export const EXPERIENCES = [
     companyLink: "https://www.xavor.com",
   },
   {
-    year: "March 2024 - Present",
+    year: "March 2024 - March 2025",
     role: "Research Assistant",
     image: fastlogo,
     company: "FAST NUCES",
@@ -134,7 +144,7 @@ export const PROJECTS = [
   {
     title: "Portfolio Website",
     image: portfolio,
-    link: "https://github.com/jawadshahid07/portfolio-website",
+    link: "https://github.com/jawadshahid07/portfolio",
     description: 
       "Developed a personal portfolio website showcasing projects, skills, and contact information. Utilized React, Tailwind CSS, and Framer Motion for animations.",
     technologies: ["React", "Tailwind CSS", "Framer Motion"],
