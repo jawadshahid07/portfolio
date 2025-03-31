@@ -69,7 +69,7 @@ export const EXPERIENCES = [
     image: dubizzlelogo,
     company: "Dubizzle Labs",
     description: "Designed and implemented a dynamic load balancer in Python for monitoring RabbitMQ queues, enabling efficient GPU instance scaling across Genesis, Runpod, and Salad. Built robust, maintainable software architecture using design patterns to automate resource allocation for AI workloads powering OLX, Zameen, and Bayut. Developed and managed production-ready machine learning pipelines by conducting exploratory data analysis, data preprocessing, and model training for various AI-driven services.",
-    technologies: ["Python", "RabbitMQ", "Runpod", "Salad", "Docker", "ML Pipelines", "EDA", "Genesis"],
+    technologies: ["Python", "RabbitMQ", "Docker", "Machine Learning"],
     companyLink: "https://www.dubizzlelabs.com"
   },
   {
